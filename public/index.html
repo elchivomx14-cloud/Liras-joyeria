@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Lira’s Joyería: oro 18k, relojes y reparaciones. El Rosal, Caracas y La Guaira, Venezuela."><title>Lira’s Joyería · Oro 18k en Caracas y La Guaira</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#070806;--ink2:#0e100d;--green:#006039;--deep:#03261a;--gold:#c9a24b;--gold2:#ecd391;--cream:#efe7d3;--mut:#d2cdb8;--serif:'Playfair Display','Didot',Georgia,serif;--sans:'DM Sans','Helvetica Neue',Arial,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--cream);font:400 18px/1.7 var(--sans);overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
+.gold{background:linear-gradient(100deg,#9b7a2c,#f1dc9e 35%,#c9a24b 55%,#f6e6b0 75%,#a98532);-webkit-background-clip:text;background-clip:text;color:transparent}
+header{position:fixed;inset:0 0 auto;z-index:50;padding:calc(14px + env(safe-area-inset-top,0px)) 5vw 14px;display:flex;align-items:center;justify-content:space-between;transition:background .4s,backdrop-filter .4s}
+header.on{background:rgba(7,8,6,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,162,75,.25)}
+.logo{font:italic 600 26px/1 var(--serif);letter-spacing:.02em}
+nav{display:flex;gap:22px;font-size:16.5px;font-weight:500;letter-spacing:.02em}
+nav a{position:relative;padding:4px 0;color:var(--cream)}
+nav a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:100%;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:transform .45s}
+nav a:hover::after{transform:scaleX(1);transform-origin:left}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 26px;border:1px solid var(--gold);color:var(--gold2);font:500 16.5px var(--sans);letter-spacing:.04em;cursor:pointer;background:transparent;position:relative;overflow:hidden;transition:color .4s,border-color .4s;isolation:isolate}
+.btn::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,#b08a35,#f1dc9e,#b08a35);transform:translateY(101%);transition:transform .45s cubic-bezier(.7,0,.2,1);z-index:-1}
+.btn:hover{color:#1a1405}.btn:hover::before{transform:none}
+.btn.solid{background:#0b6b43;border-color:#0b6b43;color:#fff}.btn.solid::before{background:linear-gradient(100deg,#b08a35,#f1dc9e,#b08a35)}
+.btn svg{width:18px;height:18px;fill:currentColor}
+.hero{min-height:100svh;position:relative;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:4vw;padding:130px 6vw 70px;background:radial-gradient(900px 600px at var(--mx,70%) var(--my,30%),rgba(0,96,57,.55),transparent 70%),linear-gradient(180deg,var(--deep),var(--ink) 95%);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:url(img/hero.jpg) center/cover;opacity:.16;mix-blend-mode:luminosity}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(420px 420px at var(--mx,70%) var(--my,30%),rgba(236,211,145,.16),transparent 70%);pointer-events:none}
+.hero>*{position:relative;z-index:1}
+h1{font:400 clamp(42px,6.6vw,96px)/1.02 var(--serif);margin:0 0 26px;letter-spacing:-.02em}
+h1 span{display:block;overflow:hidden}
+h1 span i{display:block;font-style:italic;transform:translateY(110%);animation:up 1.2s cubic-bezier(.2,.8,.1,1) forwards}
+h1 span:nth-child(2) i{animation-delay:.18s}h1 span:nth-child(3) i{animation-delay:.36s}
+@keyframes up{to{transform:none}}
+.hero p{max-width:34em;color:var(--mut);margin:0 0 34px;font-size:19.5px}
+.cta{display:flex;flex-wrap:wrap;gap:14px}
+.frame{position:relative;justify-self:center;width:min(360px,74vw);aspect-ratio:9/16;max-height:72vh}
+.frame img{width:100%;height:100%;object-fit:cover;display:block;border:1px solid var(--gold);padding:10px;background:var(--ink)}
+.frame::before{content:"";position:absolute;inset:-18px 18px 18px -18px;border:1px solid rgba(201,162,75,.45)}
+.seal{position:absolute;right:-46px;bottom:36px;width:130px;height:130px;animation:spin 26s linear infinite}
+.seal text{font:600 12.5px var(--sans);letter-spacing:.18em;fill:var(--gold2)}
+.sealc{position:absolute;right:-46px;bottom:36px;width:130px;height:130px;display:grid;place-items:center;border-radius:50%;background:var(--deep);border:1px solid var(--gold);z-index:-1}
+@keyframes spin{to{transform:rotate(360deg)}}
+section{padding:110px 6vw}
+.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:46px;flex-wrap:wrap}
+h2{font:400 clamp(34px,4.6vw,64px)/1.08 var(--serif);margin:0;letter-spacing:-.015em}
+.head p{margin:0;max-width:26em;color:var(--mut)}
+.rule{height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);border:0;margin:0}
+.rail{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:22px;scrollbar-width:thin;scrollbar-color:var(--gold) var(--ink2);cursor:grab}
+.rail.drag{cursor:grabbing;scroll-snap-type:none}
+.rail .card{flex:0 0 clamp(230px,24vw,320px);scroll-snap-align:start}
+.rbtn{display:flex;gap:10px}.rbtn button{width:48px;height:48px;border-radius:50%;border:1px solid var(--gold);background:transparent;color:var(--gold2);font-size:20px;cursor:pointer;transition:background .3s,color .3s}
+.rbtn button:hover{background:var(--gold);color:#111}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:24px}
+.card{position:relative;background:var(--ink2);border:1px solid rgba(201,162,75,.18);transition:border-color .4s,transform .5s cubic-bezier(.2,.8,.1,1)}
+.card:hover{border-color:var(--gold);transform:translateY(-6px)}
+.ph{display:block;width:100%;aspect-ratio:3/4;overflow:hidden;padding:0;border:0;background:#000;cursor:zoom-in;position:relative}
+.ph img{width:100%;height:100%;object-fit:cover;object-position:50% 58%;transition:transform 1.1s cubic-bezier(.2,.8,.1,1);display:block}
+.card:hover .ph img{transform:scale(1.07)}
+.ph::after{content:"Ver en grande";position:absolute;left:50%;bottom:16px;transform:translate(-50%,14px);opacity:0;padding:8px 18px;background:rgba(7,8,6,.85);border:1px solid var(--gold);font-size:15px;font-weight:500;letter-spacing:.04em;color:var(--gold2);transition:.4s;white-space:nowrap}
+.card:hover .ph::after,.ph:focus-visible::after{opacity:1;transform:translate(-50%,0)}
+.cb{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:16px 18px}
+.cb h3{font:500 20px/1.3 var(--serif);margin:0}
+.wa{flex:none;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;transition:background .3s,transform .3s}
+.wa:hover{background:var(--gold);color:#111;transform:rotate(-12deg) scale(1.08)}
+.wa svg{width:20px;height:20px;fill:currentColor}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:34px}
+.tabs a{padding:9px 20px;border:1px solid rgba(201,162,75,.4);font-size:15px;transition:.3s}
+.tabs a:hover{background:var(--gold);color:#111}
+.alt{background:linear-gradient(180deg,var(--ink),var(--deep) 50%,var(--ink))}
+.watch{display:grid;grid-template-columns:.9fr 1.1fr;gap:6vw;align-items:center}
+.dial{width:min(380px,80vw);justify-self:center;filter:drop-shadow(0 30px 60px rgba(0,96,57,.5))}
+.tick{stroke:var(--gold2)}
+.hand{transform-origin:100px 100px}
+.fix{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;border:1px solid rgba(201,162,75,.3);margin-top:10px}
+.fix div{padding:30px 26px;border-right:1px solid rgba(201,162,75,.2);transition:background .4s}
+.fix div:hover{background:rgba(0,96,57,.35)}
+.fix h3{font:italic 400 24px var(--serif);margin:0 0 8px;color:var(--gold2)}.fix p{margin:0;color:var(--mut);font-size:17.5px}
+.feat{display:grid;grid-template-columns:minmax(240px,340px) 1fr;gap:6vw;align-items:center}.feat .grid{grid-template-columns:1fr!important}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:6vw;align-items:center}
+.visit .box{border:1px solid var(--gold);padding:46px;background:linear-gradient(160deg,rgba(0,96,57,.5),rgba(7,8,6,.3))}
+footer{padding:36px 6vw 90px;text-align:center;color:var(--mut);font-size:16px;border-top:1px solid rgba(201,162,75,.25)}
+.float{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:60;width:60px;height:60px;border-radius:50%;background:#128c4a;display:grid;place-items:center;color:#fff;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.float::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #25d366;animation:ping 2.6s ease-out infinite}
+@keyframes ping{from{transform:scale(1);opacity:.9}to{transform:scale(1.7);opacity:0}}
+.float svg{width:30px;height:30px;fill:currentColor}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(3,10,7,.96);display:none;align-items:center;justify-content:center;flex-direction:column;gap:18px;padding:20px}
+.lb.open{display:flex;animation:fade .35s}
+@keyframes fade{from{opacity:0}}
+.lb img{max-width:92vw;max-height:72vh;border:1px solid var(--gold);padding:8px;background:#000;animation:zoom .5s cubic-bezier(.2,.8,.1,1)}
+@keyframes zoom{from{transform:scale(.92);opacity:0}}
+.lb h4{font:italic 400 26px var(--serif);margin:0}
+.lb{gap:12px}.zw{overflow:hidden;border:1px solid var(--gold);background:#000;touch-action:none;cursor:zoom-in;width:min(92vw,520px);height:min(54vh,680px);display:block;animation:zoom .5s cubic-bezier(.2,.8,.1,1)}.zw.zd{cursor:grab}
+.lb .zw img{display:block;width:100%;height:100%;object-fit:contain;max-width:none;max-height:none;border:0;padding:0;background:none;animation:none;user-select:none;-webkit-user-drag:none;will-change:transform}
+.zt{display:flex;gap:10px;align-items:center}.zt button{min-width:50px;height:48px;border-radius:24px;border:1px solid var(--gold);background:rgba(0,0,0,.55);color:var(--gold2);font:500 17px var(--sans);cursor:pointer;padding:0 16px;display:grid;place-items:center;transition:background .3s,color .3s}.zt button:hover{background:var(--gold);color:#111}
+.zh{margin:0;font-size:15px;color:var(--mut);text-align:center}
+.lbn{position:absolute;top:50%;width:52px;height:52px;border-radius:50%;border:1px solid var(--gold);background:rgba(0,0,0,.5);color:var(--gold2);font-size:22px;cursor:pointer}
+.lbn.p{left:16px}.lbn.n{right:16px}.lbx{position:absolute;top:calc(16px + env(safe-area-inset-top,0px));right:16px;width:48px;height:48px;border-radius:50%;border:1px solid var(--gold);background:transparent;color:var(--gold2);font-size:24px;cursor:pointer}
+@media(max-width:1180px){nav{display:none}}@media(max-width:860px){.feat{grid-template-columns:1fr}.hero,.watch,.visit{grid-template-columns:1fr}.frame{order:-1;max-height:46vh;margin-bottom:10px}.seal,.sealc{right:-20px;width:100px;height:100px}section{padding:80px 6vw}.fix div{border-right:0;border-bottom:1px solid rgba(201,162,75,.2)}.visit .box{padding:30px}.grid{grid-template-columns:repeat(2,1fr);gap:14px}.cb{padding:12px}.cb h3{font-size:16.5px}.wa{width:36px;height:36px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}h1 span i{transform:none}}
+
+.pr{display:block;color:var(--gold2);font:600 18px var(--sans);margin-top:3px}
+.adb{position:fixed;left:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:70;display:flex;gap:8px;flex-wrap:wrap;align-items:center;max-width:calc(100vw - 100px);padding:10px;background:rgba(7,8,6,.95);border:1px solid var(--gold);font-size:15px;color:var(--gold2)}
+.adb button,.dlg button,.ctl button{font:500 15px var(--sans);padding:9px 14px;background:#101210;color:var(--gold2);border:1px solid var(--gold);cursor:pointer}
+.adb button:hover,.dlg button:hover,.ctl button:hover{background:var(--gold);color:#111}
+.pri{background:#0b6b43!important;color:#fff!important;border-color:#0b6b43!important}.pri:disabled{opacity:.45;cursor:default}
+.dan{margin-right:auto;border-color:#b04a3a!important;color:#f0a090!important}
+.ctl{display:none;position:absolute;top:8px;left:8px;right:8px;gap:6px;z-index:3}.ctl button:first-child{margin-right:auto}
+body.adm .ctl{display:flex}
+.addp{display:none;margin-top:20px}body.adm .addp{display:inline-flex}
+body.adm [contenteditable=true]{outline:1px dashed var(--gold);outline-offset:5px;cursor:text}
+.dlg{position:fixed;inset:0;z-index:120;background:rgba(0,0,0,.82);display:grid;place-items:center;padding:20px;overflow:auto}
+.dbox{width:min(440px,100%);background:var(--ink2);border:1px solid var(--gold);padding:28px;display:grid;gap:16px}
+.dbox h3{margin:0;font:italic 400 26px var(--serif);color:var(--gold2)}
+.dbox label{display:grid;gap:6px;font-size:15.5px;color:var(--mut)}
+.dbox input,.dbox select{font:400 17px var(--sans);padding:11px 12px;background:#000;color:var(--cream);border:1px solid rgba(201,162,75,.5)}
+.dact{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end;margin-top:6px}
+</style></head><body>
+<header id="hd"><a class="logo gold" href="#inicio">Lira’s Jewelry</a>
+<nav><a href="#cadenas">Cadenas</a><a href="#zarcillos">Zarcillos y argollas</a><a href="#anillos">Anillos</a><a href="#pulseras">Pulseras</a><a href="#billeteras">Billeteras</a><a href="#relojes">Relojes</a><a href="#reparacion">Reparaciones</a><a href="#visitanos">Visítanos</a></nav>
+<a class="btn" data-wa="Hola Lira’s Joyería, quiero información." href="#" target="_blank" rel="noopener">WhatsApp</a></header>
+
+<main id="inicio"><div class="hero" id="hero">
+<div><h1><span><i class="gold">Oro de 18k,</i></span><span><i>hecho para</i></span><span><i>quedarse.</i></span></h1>
+<p>Cadenas, zarcillos, anillos y pulseras en oro 18k. También vendemos relojes y reparamos tus prendas. Nuestra oficina está en El Rosal, Caracas, y también atendemos en La Guaira, Venezuela.</p>
+<div class="cta"><a class="btn solid" href="#cadenas">Ver la colección</a><a class="btn" data-wa="Hola Lira’s Joyería, quiero hacer un pedido." href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.800 14.200c-.2.700-1.400 1.300-1.900 1.300-.5.100-1.100.100-1.800-.1-.4-.1-1-.3-1.700-.6-3-1.300-4.900-4.300-5-4.500-.2-.2-1.200-1.600-1.200-3s.8-2.100 1-2.400c.3-.3.600-.3.800-.3h.6c.2 0 .4 0 .6.500l.9 2.200c.1.200.1.400 0 .6l-.4.600-.4.500c-.2.200-.3.400-.1.700.2.300.8 1.300 1.700 2.100 1.200 1 2.200 1.400 2.500 1.500.3.200.5.100.7-.1l.9-1.100c.2-.3.400-.2.700-.1l2 1c.3.200.5.200.6.300.1.200.1.800-.2 1.600Z"/></svg>Escribir por WhatsApp</a><a class="btn" data-ig href="https://www.instagram.com/liras_joyeria/" target="_blank" rel="noopener noreferrer">@liras_joyeria</a></div></div>
+<div class="frame"><img src="img/logo.jpg" alt="Logo Lira’s Jewelry sobre terciopelo verde"><div class="sealc"></div>
+<svg class="seal" viewBox="0 0 130 130"><defs><path id="c" d="M65 65m-50 0a50 50 0 1 1 100 0a50 50 0 1 1-100 0"/></defs><text><textPath href="#c">ORO 18K · CARACAS · LA GUAIRA ·</textPath></text></svg></div>
+</div></main>
+<hr class="rule">
+
+<section id="cadenas"><div class="head"><div><h2>Cadenas <em class="gold">y dijes</em></h2></div><p>Cada pieza tiene su largo y su peso. Arrastra para ver más o toca una foto para verla grande.</p><div class="rbtn"><button aria-label="Anterior" data-r="-1">←</button><button aria-label="Siguiente" data-r="1">→</button></div></div>
+<div class="rail" id="r-cadenas"></div></section>
+
+<section id="zarcillos" class="alt"><div class="head"><h2>Zarcillos y <em class="gold">argollas</em></h2><p>Argollas, topos y zarcillos con piedra, en oro 18k.</p></div><div class="grid" id="g-zarcillos"></div></section>
+
+<section id="anillos"><div class="head"><h2>Anillos</h2><p>Desde un aro fino hasta sellos con diseño.</p></div><div class="grid" id="g-anillos"></div></section>
+
+<section id="pulseras" class="alt"><div class="head"><h2>Pulseras</h2><p>Eslabones, dijes y piezas ajustables.</p></div><div class="grid" id="g-pulseras"></div></section>
+
+<section id="billeteras"><div class="feat"><div class="grid" id="g-billeteras"></div><div><h2>Billeteras <em class="gold">de cuero</em></h2><p style="color:var(--mut);max-width:30em;margin:22px 0 30px">Billeteras en colores vivos para completar tu look. Escríbenos para saber qué colores y modelos tenemos.</p><a class="btn solid" data-wa="Hola Lira’s Joyería, quiero información sobre las billeteras." href="#" target="_blank" rel="noopener">Preguntar por billeteras</a></div></div></section>
+
+<section id="relojes" class="alt"><div class="watch">
+<svg class="dial" viewBox="0 0 200 200" aria-label="Reloj con la hora actual"><circle cx="100" cy="100" r="97" fill="#c9a24b"/><circle cx="100" cy="100" r="93" fill="#0a0b09"/><circle cx="100" cy="100" r="88" fill="#006039"/><circle cx="100" cy="100" r="88" fill="url(#sh)"/><defs><radialGradient id="sh"><stop offset="0" stop-color="#0f8a55" stop-opacity=".6"/><stop offset="1" stop-color="#03261a" stop-opacity=".9"/></radialGradient></defs><g id="ticks"></g><text x="100" y="62" text-anchor="middle" font-family="Playfair Display,serif" font-style="italic" font-size="11" fill="#ecd391">Lira’s</text><g class="hand"><line id="hh" x1="100" y1="100" x2="100" y2="58" stroke="#ecd391" stroke-width="4.500" stroke-linecap="round"/></g><g class="hand"><line id="mh" x1="100" y1="100" x2="100" y2="34" stroke="#ecd391" stroke-width="3" stroke-linecap="round"/></g><g class="hand"><line id="sh2" x1="100" y1="112" x2="100" y2="26" stroke="#fff" stroke-width="1"/></g><circle cx="100" cy="100" r="5" fill="#c9a24b"/></svg>
+<div><h2>Relojes para <em class="gold">cada muñeca</em></h2><p style="color:var(--mut);max-width:30em;margin:22px 0 30px">Estos son algunos de los relojes que tenemos. Escríbenos y te decimos cuáles están disponibles y cuánto cuestan.</p><a class="btn solid" data-wa="Hola Lira’s Joyería, quiero ver los relojes disponibles." href="#" target="_blank" rel="noopener">Pedir fotos de relojes</a></div></div><div class="grid" id="g-relojes" style="margin-top:80px"></div></section>
+
+<section id="reparacion"><div class="head"><h2>Reparación <em class="gold">de prendas</em></h2><p>Mándanos una foto de la pieza y te decimos qué se puede hacer.</p></div>
+<div class="fix"><div><h3>Soldaduras</h3><p>Cadenas, pulseras y aros que se rompieron.</p></div><div><h3>Cierres y broches</h3><p>Cambio y ajuste para que no se suelten.</p></div><div><h3>Ajuste de medida</h3><p>Anillos y pulseras a tu talla.</p></div><div><h3>Pulido y limpieza</h3><p>Devolvemos el brillo a tus piezas.</p></div></div>
+<p style="margin-top:34px"><a class="btn" data-wa="Hola Lira’s Joyería, quiero consultar una reparación." href="#" target="_blank" rel="noopener">Consultar reparación</a></p></section>
+
+<section id="visitanos" class="alt"><div class="visit"><div><h2>Visítanos en <em class="gold">Caracas y La Guaira</em></h2><p style="color:var(--mut);margin-top:22px;max-width:30em">Escríbenos para coordinar tu visita o recibir piezas por foto. Seguimos subiendo piezas nuevas en Instagram.</p></div>
+<div class="box"><p style="margin:0 0 6px;font:italic 26px var(--serif)">Lira’s Joyería</p><p style="margin:0 0 26px;color:var(--mut)">Oficina: El Rosal, Caracas, Venezuela<br>También atendemos en La Guaira<br>Instagram: @liras_joyeria</p><div class="cta"><a class="btn solid" data-wa="Hola Lira’s Joyería, quiero coordinar una visita." href="#" target="_blank" rel="noopener">WhatsApp</a><a class="btn" data-ig href="https://www.instagram.com/liras_joyeria/" target="_blank" rel="noopener noreferrer">Instagram</a></div></div></div></section>
+<footer>© <span id="yr"></span> Lira’s Joyería · El Rosal, Caracas · La Guaira, Venezuela · <a href="#" id="lg" style="text-decoration:underline">Administrar</a></footer>
+
+<a class="float" id="fl" data-wa="Hola Lira’s Joyería, quiero información." href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.200-1.400A10 10 0 1 0 12 2Zm5.800 14.200c-.2.700-1.400 1.300-1.900 1.300-.5.100-1.100.100-1.800-.1-.4-.1-1-.3-1.700-.6-3-1.300-4.900-4.300-5-4.500-.2-.2-1.200-1.600-1.200-3s.8-2.100 1-2.400c.3-.3.600-.3.800-.3h.6c.2 0 .4 0 .6.500l.9 2.200c.1.200.1.400 0 .6l-.4.600-.4.500c-.2.200-.3.400-.1.700.2.300.8 1.300 1.700 2.100 1.200 1 2.200 1.400 2.500 1.500.3.200.5.100.7-.1l.9-1.100c.2-.3.400-.2.700-.1l2 1c.3.200.5.200.6.300.1.200.1.800-.2 1.600Z"/></svg></a>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto de la pieza"><button class="lbx" aria-label="Cerrar">×</button><button class="lbn p" aria-label="Anterior">←</button><div class="zw" id="zw"><img id="lbi" alt="" draggable="false"></div><div class="zt"><button id="zo" aria-label="Alejar"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M7.5 10.5h6"/></svg></button><button id="zr" aria-label="Tamaño original">100%</button><button id="zi" aria-label="Acercar"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21M10.5 7.5v6M7.5 10.5h6"/></svg></button></div><p class="zh">Toca la foto o usa la lupa para acercar. Arrastra para moverte.</p><h4 id="lbt"></h4><a class="btn solid" id="lbw" href="#" target="_blank" rel="noopener">Consultar esta pieza</a><button class="lbn n" aria-label="Siguiente">→</button></div>
+
+<script type="application/json" id="st0">{"cats": {"cadenas": [{"s": "img/cadenas-01.jpg", "n": "Cadena con dije de estrella", "p": ""}, {"s": "img/cadenas-02.jpg", "n": "Cadena con cruz de clavos", "p": ""}, {"s": "img/cadenas-03.jpg", "n": "Cadena con dijes de trébol", "p": ""}, {"s": "img/cadenas-04.jpg", "n": "Cadena con cruz", "p": ""}, {"s": "img/cadenas-05.jpg", "n": "Cadena con dije de ave", "p": ""}, {"s": "img/cadenas-06.jpg", "n": "Cadena con dije circular", "p": ""}, {"s": "img/cadenas-07.jpg", "n": "Cadena con timón", "p": ""}, {"s": "img/cadenas-08.jpg", "n": "Cadena con búho", "p": ""}, {"s": "img/cadenas-09.jpg", "n": "Cadena con elefante", "p": ""}, {"s": "img/cadenas-10.jpg", "n": "Cadena con estrella de David", "p": ""}, {"s": "img/cadenas-11.jpg", "n": "Cadena torzal con dije", "p": ""}, {"s": "img/cadenas-12.jpg", "n": "Cadena de bolitas con dije", "p": ""}, {"s": "img/cadenas-13.jpg", "n": "Cadena con dije lingote", "p": ""}, {"s": "img/cadenas-14.jpg", "n": "Cadena con cuerno italiano", "p": ""}], "zarcillos": [{"s": "img/zarcillos-01.jpg", "n": "Argolla gruesa", "p": ""}, {"s": "img/zarcillos-02.jpg", "n": "Argollas pequeñas", "p": ""}, {"s": "img/zarcillos-03.jpg", "n": "Argollas surtidas", "p": ""}, {"s": "img/zarcillos-04.jpg", "n": "Argollas con diseño", "p": ""}, {"s": "img/zarcillos-05.jpg", "n": "Zarcillos de bola", "p": ""}, {"s": "img/zarcillos-06.jpg", "n": "Zarcillos con piedra verde", "p": ""}, {"s": "img/zarcillos-07.jpg", "n": "Zarcillos de flor", "p": ""}, {"s": "img/zarcillos-08.jpg", "n": "Topos y zarcillos variados", "p": ""}], "anillos": [{"s": "img/anillos-01.jpg", "n": "Anillos tipo reloj y griego", "p": ""}, {"s": "img/anillos-02.jpg", "n": "Anillos y argollas de eslabón", "p": ""}, {"s": "img/anillos-03.jpg", "n": "Anillo fino", "p": ""}], "pulseras": [{"s": "img/pulseras-01.jpg", "n": "Pulseras cubanas, 19 cm", "p": ""}, {"s": "img/pulseras-02.jpg", "n": "Pulseras con dijes y brillos, 18 cm", "p": ""}, {"s": "img/pulseras-03.jpg", "n": "Pulsera cubana, 20 cm", "p": ""}, {"s": "img/pulseras-04.jpg", "n": "Pulsera ajustable tricolor", "p": ""}, {"s": "img/pulseras-05.jpg", "n": "Pulsera con dijes", "p": ""}, {"s": "img/pulseras-06.jpg", "n": "Pulsera con piezas en oro", "p": ""}], "billeteras": [{"s": "img/billeteras-01.jpg", "n": "Billeteras de cuero", "p": ""}], "relojes": [{"s": "img/relojes-01.jpg", "n": "Reloj Ciloa dorado rosa", "p": ""}, {"s": "img/relojes-02.jpg", "n": "Reloj Ciloa esfera ilustrada", "p": ""}, {"s": "img/relojes-03.jpg", "n": "Reloj Ciloa cronógrafo", "p": ""}, {"s": "img/relojes-04.jpg", "n": "Reloj Ciloa correa beige", "p": ""}, {"s": "img/relojes-05.jpg", "n": "Reloj Ciloa cuadrado", "p": ""}, {"s": "img/relojes-06.jpg", "n": "Reloj Ciloa plateado", "p": ""}, {"s": "img/relojes-07.jpg", "n": "Reloj Invicta correa gris", "p": ""}]}, "t": {}, "cfg": {"wa": "56933931621", "ig": "https://www.instagram.com/liras_joyeria/"}}</script><script type="module">let ST=JSON.parse(document.getElementById('st0').textContent),CSRF='';
+try{const r=await fetch('/api/data',{cache:'no-store'});if(r.ok){const j=await r.json();if(j&&j.cats)ST=j}}catch(e){}
+const LAB={cadenas:'Cadenas y dijes',zarcillos:'Zarcillos y argollas',anillos:'Anillos',pulseras:'Pulseras',billeteras:'Billeteras',relojes:'Relojes'};
+const esc=s=>String(s).replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+const link=t=>`https://wa.me/${ST.cfg.wa}?text=${encodeURIComponent(t)}`;
+const ICON='<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-1.9 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5-.2-.2-1.2-1.6-1.2-3s.8-2.100 1-2.400c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.200c.1.2.1.4 0 .6l-.4.6-.4.5c-.2.2-.3.4-.1.7.2.3.8 1.300 1.700 2.100 1.200 1 2.200 1.400 2.500 1.500.3.2.5.1.7-.1l.9-1.100c.2-.3.4-.2.7-.1l2 1c.3.2.5.2.6.3.1.2.1.8-.2 1.600Z"/></svg>';
+const all=[];let CAN=false,dirt=false;
+// textos editables: se guardan por posición
+const SEL='h1 i,h2,.hero p,.head p,.watch p,.feat p,.fix h3,.fix p,.visit p';
+const TXT=[...document.querySelectorAll(SEL)];
+TXT.forEach((e,i)=>{if(ST.t[i]!=null)e.innerHTML=ST.t[i]});
+function applyCfg(){document.querySelectorAll('[data-wa]').forEach(a=>a.href=link(a.dataset.wa));document.querySelectorAll('[data-ig]').forEach(a=>a.href=ST.cfg.ig)}
+function render(){all.length=0;for(const k in ST.cats){const box=document.getElementById((k=='cadenas'?'r-':'g-')+k);if(!box)continue;box.innerHTML='';ST.cats[k].forEach((p,j)=>{const id=all.push(p)-1,c=document.createElement('article');c.className='card';
+c.innerHTML=`<button class="ph" data-i="${id}" aria-label="Ver ${esc(p.n)} en grande"><img loading="lazy" src="${p.s}" alt="${esc(p.n)}"></button><div class="cb"><div><h3>${esc(p.n)}</h3>${p.p?`<span class="pr">${esc(p.p)}</span>`:''}</div><a class="wa" target="_blank" rel="noopener" aria-label="Preguntar por ${esc(p.n)}" href="${link('Hola Lira’s Joyería, me interesa: '+p.n+(p.p?' ('+p.p+')':''))}">${ICON}</a></div>`;
+if(CAN)c.insertAdjacentHTML('beforeend',`<div class="ctl" data-k="${k}" data-j="${j}"><button data-a="e">Editar</button><button data-a="l" aria-label="Mover antes">←</button><button data-a="r" aria-label="Mover después">→</button></div>`);
+box.appendChild(c)})}}
+applyCfg();render();document.getElementById('yr').textContent=new Date().getFullYear();
+// lightbox
+const lb=document.getElementById('lb'),li=document.getElementById('lbi');let cur=0,opener=null;
+function show(i){zreset();cur=(i+all.length)%all.length;const p=all[cur];li.src=p.s;li.alt=p.n;document.getElementById('lbt').textContent=p.n+(p.p?' · '+p.p:'');document.getElementById('lbw').href=link('Hola Lira’s Joyería, me interesa: '+p.n+(p.p?' ('+p.p+')':''))}
+document.addEventListener('click',e=>{const b=e.target.closest('.ph');if(b&&!window._moved){opener=b;show(+b.dataset.i);lb.classList.add('open');document.body.style.overflow='hidden';lb.querySelector('.lbx').focus()}});
+const close=()=>{lb.classList.remove('open');document.body.style.overflow='';opener&&opener.focus()};
+lb.querySelector('.lbx').onclick=close;lb.querySelector('.p').onclick=()=>show(cur-1);lb.querySelector('.n').onclick=()=>show(cur+1);
+lb.addEventListener('click',e=>{if(e.target===lb)close()});
+addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key=='Escape')close();if(e.key=='+'||e.key=='=')zc(1.4);if(e.key=='-')zc(1/1.4);if(e.key=='0')zreset();if(e.key=='ArrowLeft')show(cur-1);if(e.key=='ArrowRight')show(cur+1)});
+let tx=0;lb.addEventListener('touchstart',e=>tx=e.touches[0].clientX,{passive:true});lb.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50&&Z.s==1&&Date.now()-lp>400)show(cur+(d<0?1:-1))});
+// lupa
+const zw=document.getElementById('zw'),Z={s:1,x:0,y:0},P=new Map();let d0=0,s0=1,mv=0,multi=false,lp=0;
+function zapply(){const cw=zw.clientWidth,ch=zw.clientHeight,nr=Math.min(cw/(li.naturalWidth||cw),ch/(li.naturalHeight||ch)),w=(li.naturalWidth||cw)*nr,h=(li.naturalHeight||ch)*nr,mx=Math.max(0,(w*Z.s-cw)/2),my=Math.max(0,(h*Z.s-ch)/2);Z.x=Math.min(mx,Math.max(-mx,Z.x));Z.y=Math.min(my,Math.max(-my,Z.y));li.style.transform=`translate(${Z.x}px,${Z.y}px) scale(${Z.s})`;zw.classList.toggle('zd',Z.s>1);document.getElementById('zr').textContent=Math.round(Z.s*100)+'%'}
+function zat(s2,cx,cy){s2=Math.min(4,Math.max(1,s2));const r=zw.getBoundingClientRect(),px=cx-(r.left+r.width/2),py=cy-(r.top+r.height/2),k=s2/Z.s;Z.x=px-(px-Z.x)*k;Z.y=py-(py-Z.y)*k;Z.s=s2;if(s2==1){Z.x=0;Z.y=0}zapply()}
+function zreset(){Z.s=1;Z.x=Z.y=0;zapply()}
+function zc(f){const r=zw.getBoundingClientRect();zat(Z.s*f,r.left+r.width/2,r.top+r.height/2)}
+document.getElementById('zi').onclick=()=>zc(1.5);document.getElementById('zo').onclick=()=>zc(1/1.5);document.getElementById('zr').onclick=zreset;
+zw.addEventListener('wheel',e=>{e.preventDefault();zat(Z.s*(e.deltaY<0?1.2:1/1.2),e.clientX,e.clientY)},{passive:false});
+zw.addEventListener('pointerdown',e=>{zw.setPointerCapture(e.pointerId);P.set(e.pointerId,{x:e.clientX,y:e.clientY});if(P.size==1)mv=0;if(P.size==2){multi=true;const[a,b]=[...P.values()];d0=Math.hypot(a.x-b.x,a.y-b.y)||1;s0=Z.s}});
+zw.addEventListener('pointermove',e=>{const p=P.get(e.pointerId);if(!p)return;const dx=e.clientX-p.x,dy=e.clientY-p.y;p.x=e.clientX;p.y=e.clientY;mv+=Math.abs(dx)+Math.abs(dy);if(P.size==2){lp=Date.now();const[a,b]=[...P.values()];zat(s0*Math.hypot(a.x-b.x,a.y-b.y)/d0,(a.x+b.x)/2,(a.y+b.y)/2)}else if(Z.s>1){Z.x+=dx;Z.y+=dy;zapply()}});
+const pend=e=>{P.delete(e.pointerId);if(P.size==0){const tap=!multi&&mv<8&&e.type=='pointerup';multi=false;if(tap){Z.s>1?zreset():zat(2.5,e.clientX,e.clientY)}}};
+zw.addEventListener('pointerup',pend);zw.addEventListener('pointercancel',pend);
+// rail, header, luz del hero, reloj
+const rail=document.getElementById('r-cadenas');
+document.querySelectorAll('[data-r]').forEach(b=>b.onclick=()=>rail.scrollBy({left:+b.dataset.r*rail.clientWidth*.8,behavior:'smooth'}));
+let down=false,sx=0,sl=0;rail.addEventListener('mousedown',e=>{down=true;sx=e.pageX;sl=rail.scrollLeft;window._moved=false});
+addEventListener('mouseup',()=>{down=false;rail.classList.remove('drag');setTimeout(()=>window._moved=false,0)});
+rail.addEventListener('mousemove',e=>{if(!down)return;const d=e.pageX-sx;if(Math.abs(d)>5){window._moved=true;rail.classList.add('drag');rail.scrollLeft=sl-d}});
+const hd=document.getElementById('hd');addEventListener('scroll',()=>hd.classList.toggle('on',scrollY>40),{passive:true});
+const hero=document.getElementById('hero');hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();hero.style.setProperty('--mx',(e.clientX-r.left)+'px');hero.style.setProperty('--my',(e.clientY-r.top)+'px')});
+let tk='';for(let i=0;i<60;i++){const big=i%5==0;tk+=`<line class="tick" x1="100" y1="${big?13:15}" x2="100" y2="${big?22:19}" stroke-width="${big?2.5:.8}" transform="rotate(${i*6} 100 100)"/>`}document.getElementById('ticks').innerHTML=tk;
+(function tick(){const d=new Date(),s=d.getSeconds()+d.getMilliseconds()/1000,m=d.getMinutes()+s/60,h=d.getHours()%12+m/60;document.getElementById('hh').parentNode.style.transform=`rotate(${h*30}deg)`;document.getElementById('mh').parentNode.style.transform=`rotate(${m*6}deg)`;document.getElementById('sh2').parentNode.style.transform=`rotate(${s*6}deg)`;requestAnimationFrame(tick)})();
+
+// ===== PANEL DE ADMINISTRACIÓN (solo quien puede editar esta página) =====
+function shrink(f){return new Promise((ok,no)=>{const u=URL.createObjectURL(f),im=new Image();im.onload=()=>{const r=Math.min(1,1080/im.width,1920/im.height),c=document.createElement('canvas');c.width=Math.round(im.width*r);c.height=Math.round(im.height*r);c.getContext('2d').drawImage(im,0,0,c.width,c.height);URL.revokeObjectURL(u);(function tr(q){c.toBlob(b=>{if(!b)return no();if(b.size>1.3e6&&q>.5)tr(q-.12);else ok(b)},'image/jpeg',q)})(.82)};im.onerror=()=>no();im.src=u})}
+async function up(b){const f=new FormData();f.append('f',b,'p.jpg');const r=await fetch('/api/upload',{method:'POST',headers:{'X-CSRF':CSRF},body:f}),j=await r.json();if(!r.ok)throw new Error(j.error||'error');return j.url}
+function dlg(h){const d=document.createElement('div');d.className='dlg';d.innerHTML='<div class="dbox">'+h+'</div>';document.body.appendChild(d);return d}
+async function initAdmin(){
+CAN=true;render();
+const bar=document.createElement('div');bar.className='adb';bar.innerHTML='<button id="a1">✎ Editar página</button><button id="a2">Contacto</button><button id="a3" class="pri" disabled>Publicar cambios</button><button id="a5">Salir</button><span id="a4">Modo administradora</span>';document.body.appendChild(bar);
+const a1=bar.querySelector('#a1'),a3=bar.querySelector('#a3'),a4=bar.querySelector('#a4'),say=m=>a4.textContent=m;
+const dirty=()=>{dirt=true;a3.disabled=false;say('Cambios sin publicar')};
+a1.onclick=()=>{const on=!document.body.classList.contains('adm');document.body.classList.toggle('adm',on);TXT.forEach(e=>e.contentEditable=on);a1.textContent=on?'✓ Salir de edición':'✎ Editar página';say(on?'Toca cualquier texto para editarlo':'Modo administradora')};
+TXT.forEach((e,i)=>{e.addEventListener('input',()=>{ST.t[i]=e.innerHTML;dirty()});e.addEventListener('paste',v=>{v.preventDefault();document.execCommand('insertText',false,(v.clipboardData||window.clipboardData).getData('text'))})});
+// botones "agregar fotos" por categoría
+const fi=document.createElement('input');fi.type='file';fi.accept='image/*';fi.multiple=true;fi.hidden=true;document.body.appendChild(fi);let fc='';
+for(const k in LAB){const box=document.getElementById((k=='cadenas'?'r-':'g-')+k),b=document.createElement('button');b.className='btn addp';b.textContent='+ Agregar fotos a '+LAB[k];b.onclick=()=>{fc=k;fi.value='';fi.click()};(k=='billeteras'?box.parentNode:box).after(b)}
+fi.onchange=async()=>{say('Procesando fotos…');let n=0;for(const f of fi.files){try{ST.cats[fc].push({s:await up(await shrink(f)),n:'Nueva pieza',p:''});n++}catch(e){say('Error: '+(e.message||'no se pudo subir'))}}if(n){render();dirty();say(n+' foto(s) agregadas. Toca Editar para ponerles nombre y precio.')}else say('No se pudo leer la foto')};
+// editar / mover piezas
+document.addEventListener('click',e=>{const b=e.target.closest('.ctl button');if(!b)return;const c=b.parentNode,k=c.dataset.k,j=+c.dataset.j,L=ST.cats[k];
+if(b.dataset.a=='l'&&j>0){[L[j-1],L[j]]=[L[j],L[j-1]];render();dirty()}
+if(b.dataset.a=='r'&&j<L.length-1){[L[j+1],L[j]]=[L[j],L[j+1]];render();dirty()}
+if(b.dataset.a=='e'){const p=L[j];let nf=null,sure=false;const d=dlg(`<h3>Editar pieza</h3><label>Nombre<input id="en" value="${esc(p.n)}"></label><label>Precio<input id="ep" value="${esc(p.p||'')}" placeholder="Ej: $120"></label><label>Categoría<select id="ec">${Object.keys(LAB).map(x=>`<option value="${x}"${x==k?' selected':''}>${LAB[x]}</option>`).join('')}</select></label><label>Cambiar foto<input id="ef" type="file" accept="image/*"></label><div class="dact"><button id="ed" class="dan">Eliminar</button><button id="ex">Cancelar</button><button id="eg" class="pri">Guardar</button></div>`);
+d.querySelector('#ef').onchange=async v=>{if(v.target.files[0])try{nf=await shrink(v.target.files[0])}catch(x){}};
+d.querySelector('#ex').onclick=()=>d.remove();
+d.querySelector('#ed').onclick=v=>{if(!sure){sure=true;v.target.textContent='¿Seguro? Toca de nuevo';return}L.splice(j,1);render();dirty();d.remove()};
+d.querySelector('#eg').onclick=async()=>{if(nf){try{p.s=await up(nf)}catch(x){say('No se pudo subir la foto');return}}p.n=d.querySelector('#en').value.trim()||'Pieza';p.p=d.querySelector('#ep').value.trim();const nk=d.querySelector('#ec').value;if(nk!=k){L.splice(j,1);ST.cats[nk].push(p)}render();dirty();d.remove()}}});
+// contacto
+bar.querySelector('#a2').onclick=()=>{const d=dlg(`<h3>Contacto</h3><label>WhatsApp (código de país y número, sin + ni espacios)<input id="cw" value="${esc(ST.cfg.wa)}" inputmode="numeric"></label><label>Enlace de Instagram<input id="ci" value="${esc(ST.cfg.ig)}"></label><div class="dact"><button id="cx">Cancelar</button><button id="cg" class="pri">Guardar</button></div>`);d.querySelector('#cx').onclick=()=>d.remove();d.querySelector('#cg').onclick=()=>{ST.cfg.wa=d.querySelector('#cw').value.replace(/\D/g,'')||ST.cfg.wa;ST.cfg.ig=d.querySelector('#ci').value.trim()||ST.cfg.ig;applyCfg();render();dirty();d.remove()}};
+bar.querySelector('#a5').onclick=async()=>{try{await fetch('/api/logout',{method:'POST',headers:{'X-CSRF':CSRF}})}catch(e){}dirt=false;location.reload()};
+a3.onclick=async()=>{a3.disabled=true;say('Publicando…');try{const r=await fetch('/api/save',{method:'POST',headers:{'X-CSRF':CSRF,'Content-Type':'application/json'},body:JSON.stringify(ST)}),j=await r.json();if(!r.ok)throw new Error(j.error||'error');dirt=false;say('Publicado ✓ Ya lo ven todos los visitantes')}catch(x){a3.disabled=false;say('No se pudo publicar: '+x.message)}};
+addEventListener('beforeunload',e=>{if(dirt){e.preventDefault();e.returnValue=''}});
+}
+(async()=>{try{const m=await(await fetch('/api/me',{cache:'no-store'})).json();if(m.admin){CSRF=m.csrf;initAdmin()}}catch(e){}})();
+document.getElementById('lg').onclick=e=>{e.preventDefault();if(CAN)return;const d=dlg(`<h3>Acceso administradora</h3><label>Usuario<input id="lu" autocomplete="username"></label><label>Clave<input id="lp" type="password" autocomplete="current-password"></label><p id="lm" style="margin:0;color:#f0a090"></p><div class="dact"><button id="lx">Cancelar</button><button id="ll" class="pri">Entrar</button></div>`);
+const go=async()=>{const m=d.querySelector('#lm');m.textContent='';try{const r=await fetch('/api/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({u:d.querySelector('#lu').value,p:d.querySelector('#lp').value})}),j=await r.json();if(!r.ok){m.textContent=j.error||'Error';return}CSRF=j.csrf;d.remove();initAdmin()}catch(x){m.textContent='No se pudo conectar con el servidor'}};
+d.querySelector('#lx').onclick=()=>d.remove();d.querySelector('#ll').onclick=go;d.querySelector('#lp').addEventListener('keydown',k=>{if(k.key=='Enter')go()});d.querySelector('#lu').focus()};
+</script></body></html>

@@ -1,0 +1,13 @@
+name = "liras-joyeria"
+main = "src/worker.js"
+compatibility_date = "2025-01-01"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = ["/api/*", "/uploads/*"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "liras-db"
+database_id = "PEGA-AQUI-EL-ID-DE-TU-BASE-DE-DATOS"
